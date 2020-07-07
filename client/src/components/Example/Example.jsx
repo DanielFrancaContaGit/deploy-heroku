@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import baseUrl from '../../global/globalfunc'
 
 import './Example.css';
 
@@ -7,7 +8,7 @@ function Example() {
   const [examples, setExamples] = useState([]);
 
   const loadExamples = async () => {
-    const res = await axios.get('http://localhost:3001/api/examples');
+    const res = await axios.get(`${baseUrl}/api/examples`);
     setExamples(res.data);
   };
 

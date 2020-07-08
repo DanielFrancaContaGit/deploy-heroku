@@ -1,4 +1,4 @@
 
-const baseUrl = "https://teste-do-deploy-do-pta.herokuapp.com"
+const baseUrl = "https://deploy-pta-teste.herokuapp.com/"
 
 module.exports = baseUrl;
